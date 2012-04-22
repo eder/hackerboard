@@ -1,0 +1,19 @@
+pt-BR:
+  activerecord:
+    models:
+      user: "usuário"
+
+    attributes:
+      user:
+        name: "Nome completo"
+        email: "E-mail"
+        password: "Senha"
+        password_confirmation: "Confirmação da senha"
+
+      question:
+        title: "Sua pergunta"
+        body: "Detalhe sua pergunta"
+        category_id: "Escolha uma categoria"
+
+      comment:
+        body: "Seu comentário"

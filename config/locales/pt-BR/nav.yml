@@ -1,0 +1,7 @@
+pt-BR:
+  nav:
+    signup: "Cadastre-se"
+    login: "Entrar"
+    logout: "Sair"
+    new_question: "Criar nova pergunta"
+    home: "Página inicial"

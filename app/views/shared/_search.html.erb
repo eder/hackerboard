@@ -1,0 +1,8 @@
+<h1><%= t("search.search") %></h1>
+
+<%= form_tag search_path, :method => :get, :class => "search" do %>
+  <p>
+    <%= search_field_tag :query, nil, :placeholder => t("search.placeholder") %>
+    <%= submit_tag t("search.ok") %>
+  </p>
+<% end %>

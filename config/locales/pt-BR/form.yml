@@ -1,0 +1,22 @@
+pt-BR:
+  errors:
+    double_check_your_form: "Verifique seu formulário antes de continuar"
+
+  labels:
+    login:
+      email: "Seu e-mail"
+      password: "Sua senha"
+      submit: "Entrar"
+
+  helpers:
+    submit:
+      user:
+        create: "Quero me cadastrar!"
+        submit: "Salvar %{model}"
+        update: "Atualizar %{model}"
+
+      question:
+        create: "Criar pergunta"
+
+      comment:
+        create: "Enviar comentário"

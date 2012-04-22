@@ -1,0 +1,9 @@
+<% if record.errors.any? %>
+  <dl class="error-messages">
+    <dt><%= t("errors.double_check_your_form") %></dt>
+
+    <% record.errors.full_messages.each do |message| %>
+      <dd><%= message %></dd>
+    <% end %>
+  </dl>
+<% end %>

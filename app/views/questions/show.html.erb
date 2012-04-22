@@ -1,0 +1,34 @@
+<article>
+  <h1><%= @question.title %></h1>
+  <%= simple_format @question.body %>
+
+  <p class="profile">
+    <%= profile_link(@question.user) %>
+    <%= t("question.published_this", :time => l(@question.created_at, :format => :short)) %>
+  </p>
+</article>
+
+<h2><%= t("comment.title") %></h2>
+
+<%= render @comments %>
+<%= render *@comment_form.to_partial %>
+
+<% content_for :sidebar do %>
+  <h3><%= t("question.about") %></h3>
+  <ul class="stats">
+    <li>
+      <%= t("question.views_html", :count => @question.views_count) %>
+    </li>
+
+    <li>
+      <%= t("question.comments_html", :count => @question.comments_count) %>
+    </li>
+
+    <li>
+      <%= link_to "RSS", questions_feed_path(:format => "xml"), :class => "feed" %>
+    </li>
+  </ul>
+
+  <%= render "shared/search" %>
+  <%= render "shared/categories", :categories => Category.all %>
+<% end %>

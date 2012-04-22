@@ -1,0 +1,25 @@
+pt-BR:
+  flash:
+    actions:
+      create:
+        notice: "%{resource_name} was successfully created."
+      update:
+        notice: "%{resource_name} was successfully updated."
+      destroy:
+        notice: "%{resource_name} was successfully destroyed."
+        alert: "%{resource_name} could not be destroyed."
+
+    user:
+      create: "Sua conta foi criada com sucesso!"
+
+    login:
+      fail: "E-mail/senha inválidos."
+
+    question:
+      create: "Sua pergunta foi criada com sucesso."
+
+    comment:
+      create: "Seu comentário foi adicionado."
+      fail: "Preencha o seu comentário"
+
+    require_login: "Você precisa estar logado para acessar esta página."

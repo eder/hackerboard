@@ -1,0 +1,8 @@
+<h1><%= t("greetings.welcome_aboard") %></h1>
+<ul class="users">
+  <% users.each do |user| %>
+    <li>
+      <%= profile_link(user) %>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,10 @@
+<%= form_for Comment.new, :url => new_comment_path(question) do |f| %>
+  <p>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

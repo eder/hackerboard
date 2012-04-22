@@ -1,0 +1,8 @@
+<h1><%= @category.name %></h1>
+
+<%= render @question_list.to_partial, :questions => @question_list.questions %>
+
+<% content_for :sidebar do %>
+  <%= render "shared/search" %>
+  <%= render "shared/categories", :categories => @question_list.categories %>
+<% end %>

@@ -1,0 +1,9 @@
+<%= form_for [:admin, @category], :method => :delete do |f| %>
+  <p>
+    <%= t("category.are_you_sure_you_want_to_remove_html", :category => @category.name) %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

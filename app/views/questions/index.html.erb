@@ -1,0 +1,16 @@
+<h1>Latest posts</h1>
+
+<dl class="filters">
+  <dt>Filter posts</dt>
+
+  <dd><%= link_to t("question.all"), questions_path %></dd>
+  <dd><%= link_to t("question.unanswered"), questions_path(:filter => "unanswered") %></dd>
+</dl>
+
+<%= render @question_list.to_partial, :questions => @question_list.questions %>
+
+<% content_for :sidebar do %>
+  <%= render "shared/search" %>
+  <%= render "shared/categories", :categories => @question_list.categories %>
+  <%= render "shared/users", :users => @question_list.users %>
+<% end %>

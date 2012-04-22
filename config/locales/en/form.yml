@@ -1,0 +1,16 @@
+en:
+  errors:
+    double_check_your_form: "Verifique seu formulário antes de continuar"
+
+  labels:
+    login:
+      email: "Your e-mail address"
+      password: "Your password"
+      submit: "Login"
+
+  helpers:
+    submit:
+      user:
+        create: "Sign up"
+        submit: Save %{model}
+        update: Update %{model}

@@ -1,0 +1,8 @@
+pt-BR:
+  category:
+    are_you_sure_you_want_to_remove_html: "Você quer remover a categoria <strong>%{category}</strong>? Não será possível desfazer esta ação."
+
+    # http://guides.rubyonrails.org/i18n.html#pluralization
+    questions_html:
+      one: "1 <span>pergunta</span>"
+      other: "%{count} <span>perguntas</span>"

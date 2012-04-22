@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hackerboard</title>
+  <%= javascript_include_tag "modernizr" %>
+  <%= stylesheet_link_tag "shared", "hb" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <div class="page">
+    <%= render "shared/header" %>
+    <%= render "shared/flash_messages" %>
+
+    <div class="content container group">
+      <section class="main">
+        <%= yield %>
+      </section>
+
+      <aside class="sidebar">
+        <%= yield :sidebar %>
+      </aside>
+    </div>
+
+    <footer class="container">
+      <nav>
+        <ul>
+          <li><%= link_to t("nav.signup"), signup_path %></li>
+          <li><%= link_to t("nav.login"), login_path %></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

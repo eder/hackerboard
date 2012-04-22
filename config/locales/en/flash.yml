@@ -1,0 +1,6 @@
+en:
+  flash:
+    user:
+      create: "Congrats! You account has been created!"
+    login:
+      fail: "Invalid e-mail/password combination."

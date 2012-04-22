@@ -1,0 +1,4 @@
+pt-BR:
+  greetings:
+    welcome_aboard: "Bem-vindos!"
+    hello: "Olá, %{name}!"

@@ -1,0 +1,15 @@
+pt-BR:
+  question:
+    all: "Todos"
+    about: "Sobre"
+    unanswered: "Não respondidas"
+    no_questions_found: "Nenhuma pergunta foi encontrada!"
+    published_at: "publicado %{time}"
+    published_this: "criou esta pergunta em %{time}"
+    comments_html:
+      one: "1 <span>comentário</span>"
+      other: "%{count} <span>comentários</span>"
+    views_html:
+      zero: "nenhum acesso"
+      one: "1 <span>acesso</span>"
+      other: "%{count} <span>acessos</span>"

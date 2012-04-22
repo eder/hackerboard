@@ -1,0 +1,8 @@
+en:
+  activerecord:
+    models:
+      user: "user"
+
+    attributes:
+      user:
+        name: "Name"
