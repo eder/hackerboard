@@ -2,3 +2,7 @@ pt-BR:
   comment:
     commented_this: "fez este comentário %{time}"
     title: "Comentários"
+    packages: "Pacotes"
+      title: 
+    
+  

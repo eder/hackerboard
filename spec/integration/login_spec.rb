@@ -20,7 +20,7 @@ describe "Login" do
     end
   end
 
-  context "with invalid credentials" do
+  context "with invalid credentials", :js => true do
     before do
       visit "/"
       click_link "Entrar"

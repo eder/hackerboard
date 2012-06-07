@@ -1,7 +1,7 @@
 <div class="comment">
   <p class="profile">
     <%= profile_link(comment.user) %>
-    <%= t("comment.commented_this", :time => time_ago_in_words(comment.created_at)) %>
+    <%= t("addr.commented_this", :time => time_ago_in_words(comment.created_at)) %>
   </p>
 
   <%= simple_format comment.body %>
