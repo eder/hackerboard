@@ -1,5 +1,5 @@
 # application domain
-set :application, "192.168.56.2"
+set :application, "72.29.94.226"
 
 # how many releases should be kept in history
 set :keep_releases, 5
@@ -12,19 +12,20 @@ set :deploy_via, :remote_cache
 
 # your application repository
 set :scm, "git"
-set :repository,  "git@codeplane.com:fnando/hackerboard.git"
+set :repository,  "git@github.com:eder/hackerboard.git"
+
 set :branch, "master"
 
 # the deployer user
-set :user, "hellobits"
+set :user, "web"
 set :runner, "www-data"
 
 # the application deployment path
-set :deploy_to, "/var/www/hackerboard"
+set :deploy_to, "/home/hackerboard"
 set :current, "#{deploy_to}/current"
 
 # the ssh port
-set :port, 22
+set :port, 3667
 
 # set the roles
 role :app, application
