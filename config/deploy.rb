@@ -21,7 +21,7 @@ set :user, "web"
 set :runner, "www-data"
 
 # the application deployment path
-set :deploy_to, "/home/hackerboard"
+set :deploy_to, "/home/web/"
 set :current, "#{deploy_to}/current"
 
 # the ssh port
