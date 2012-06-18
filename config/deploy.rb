@@ -1,5 +1,5 @@
 # application domain
-set :application, "72.29.94.226"
+set :application, "192.168.1.55"
 
 # how many releases should be kept in history
 set :keep_releases, 5
@@ -17,15 +17,15 @@ set :repository,  "git@github.com:eder/hackerboard.git"
 set :branch, "master"
 
 # the deployer user
-set :user, "web"
-set :runner, "www-data"
+set :user, "homolog"
+set :runner, "homolog"
 
 # the application deployment path
-set :deploy_to, "/home/web/"
+set :deploy_to, "/home/homolog"
 set :current, "#{deploy_to}/current"
 
 # the ssh port
-set :port, 3667
+set :port, 22
 
 # set the roles
 role :app, application
